@@ -14,7 +14,7 @@ public class ProductItem {
     private String productId;
 
     @ManyToOne
-
+@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Bill bill;
     private  int quantity;
     private double Unitprice;
